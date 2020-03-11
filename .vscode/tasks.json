@@ -1,0 +1,24 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "command": "g++",
+            "args": [
+                "-g",
+                "--std=c++11",
+                "main.cpp",
+                "-o","Builds/Win/app",
+                "-lopengl32",
+                "-lmingw32",
+                "-lglfw3",
+                "-lglew32",
+                "-lgdi32"
+            ],
+            "type": "process",
+            
+        }
+    ]
+}
